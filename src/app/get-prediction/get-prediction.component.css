@@ -1,0 +1,14 @@
+button {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.advice {
+  position: absolute;
+  top: calc(60vh - (/* height */100px / 2));
+  left: calc(44vw - (/* width */140px / 2));
+  z-index: 10;
+  width: 300px;
+  font-family: 'Charm', cursive;
+  text-align: center;
+}
