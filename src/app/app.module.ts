@@ -7,10 +7,14 @@ import { BubbleComponent } from './bubble/bubble.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+import { SignupComponent } from './auth/signup/signup.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
 import { GetPredictionComponent } from './get-prediction/get-prediction.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from './auth/auth.service';
+import 'firebase/auth';
 
 @NgModule({
   declarations: [
@@ -22,13 +26,15 @@ import { GetPredictionComponent } from './get-prediction/get-prediction.componen
     SignupComponent,
     LogoutComponent,
     HomeComponent,
-    GetPredictionComponent
+    GetPredictionComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
