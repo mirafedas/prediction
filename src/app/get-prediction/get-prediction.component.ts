@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { advanceActivatedRoute } from '@angular/router/src/router_state';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-get-prediction',
@@ -9,7 +9,7 @@ import { advanceActivatedRoute } from '@angular/router/src/router_state';
 export class GetPredictionComponent implements OnInit {
   advice: string = this.advice;
 
-  constructor() {
+  constructor(private authService : AuthService) {
   }
 
   ngOnInit() {
@@ -25,6 +25,6 @@ export class GetPredictionComponent implements OnInit {
         console.log(advice);
         this.advice = advice;
       })
-  }
+    }
   }
 

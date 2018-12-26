@@ -1,7 +1,8 @@
 <button
 type="button"
 class="btn btn-danger"
-(click)="getPrediction()">
+(click)="getPrediction()"
+[routerLink]="['./newadvice']">
 Get prediction
 </button>
 <p class="advice">{{ advice }}</p>

@@ -1,1 +1,8 @@
-<button type="button" class="btn btn-warning">Log out</button>
+<ng-template [ngIf]="authService.isAuthenticated()">
+    <button type="button"
+      class="btn btn-warning"
+      (click)="onLogout()">
+      Log out
+    </button>
+</ng-template>
+
