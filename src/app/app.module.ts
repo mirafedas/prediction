@@ -7,11 +7,12 @@ import { BubbleComponent } from './bubble/bubble.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './auth/signup/signup.component';
+import { SignupBtnComponent } from './signup-btn/signup-btn.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
 import { GetPredictionComponent } from './get-prediction/get-prediction.component';
 import { SigninComponent } from './auth/signin/signin.component';
+import { SignupComponent } from './auth/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './auth/auth.service';
 import 'firebase/auth';
@@ -23,6 +24,7 @@ import 'firebase/auth';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
+    SignupBtnComponent,
     SignupComponent,
     LogoutComponent,
     HomeComponent,

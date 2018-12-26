@@ -1,0 +1,9 @@
+.signinForm {
+  position: absolute;
+  top: calc(47vh - (/* height */100px / 2));
+  left: calc(47vw - (/* width */140px / 2));
+  z-index: 10;
+  width: 300px;
+  font-weight: bold;
+  text-align: center;
+}
