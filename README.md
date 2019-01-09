@@ -4,9 +4,8 @@
 ## Project name: Prediction
 [Demo](https://prediction-advice.herokuapp.com/)
 
-> This project uses Advice Slip JSON API (https://api.adviceslip.com/#object-search-example). It shows advices and predictions. First you need to sign up, after that you are automatically redirected to sign in form. After signing in you can get a new prediction/advice, click the "Get prediction" buttons. Attention: password should include at least 6 symbols.
+> This project uses Advice Slip JSON API: api.adviceslip.com. It shows advices and predictions. First you need to sign up, after that you are automatically redirected to sign in form. After signing in you can get a new prediction/advice, just click the "Get prediction" button. Attention: password should include at least 6 symbols.
 It is done using Angular CLI. Authentification is implemented using Firebase.
-
 
 ## Tech stack
 
